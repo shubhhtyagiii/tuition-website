@@ -336,3 +336,34 @@ details p{color:var(--muted);margin-top:8px}
     font-size: 1.8rem;
   }
 }
+/* ===============================
+   HEADER LOGO WITH IMAGE
+================================ */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand img {
+  height: 40px;      /* clean & professional */
+  width: auto;
+}
+
+.brand span {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0b3b9b;
+  white-space: nowrap;
+}
+
+/* Mobile fix */
+@media (max-width: 600px) {
+  .brand img {
+    height: 34px;
+  }
+
+  .brand span {
+    font-size: 1rem;
+  }
+}
