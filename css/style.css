@@ -367,3 +367,26 @@ details p{color:var(--muted);margin-top:8px}
     font-size: 1rem;
   }
 }
+.wa-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  display: inline-block;
+}
+/* ===============================
+   WHATSAPP HEADER BUTTON FIX
+================================ */
+.whatsapp-top {
+  display: inline-flex;
+  align-items: center;      /* 🔥 MAIN FIX */
+  gap: 8px;
+  padding: 12px 18px;
+  font-weight: 600;
+}
+
+.whatsapp-top .wa-icon {
+  width: 18px;
+  height: 18px;
+  display: block;           /* 🔥 inline -> block */
+  flex-shrink: 0;
+}
